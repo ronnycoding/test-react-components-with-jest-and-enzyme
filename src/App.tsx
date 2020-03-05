@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const Test = () => <div>Testing</div>
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <h1>Welcome to React</h1>
+      <ul className="my-list-elements">
+        <li>element 1</li>
+        <li>element 2</li>
+        <li>element 3</li>
+      </ul>
+      <Test />
     </div>
   );
 }
