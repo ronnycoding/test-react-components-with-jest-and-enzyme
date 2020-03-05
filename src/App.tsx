@@ -4,6 +4,8 @@ import './App.css';
 
 const Test = () => <div>Testing</div>
 
+const Title = ({text}: {text: string}) => <div>{text}</div>
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +24,7 @@ function App() {
         </a>
       </header>
       <h1>Welcome to React</h1>
+      <Title text="Some title" />
       <ul className="my-list-elements">
         <li>element 1</li>
         <li>element 2</li>

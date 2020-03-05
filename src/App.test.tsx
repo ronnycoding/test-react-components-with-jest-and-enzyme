@@ -25,6 +25,14 @@ describe('<App />', () => {
   it('should contain a h1 element with a text "Welcome to React"', () => {
     expect(wrapper.find('h1').text()).toBe('Welcome to React')
   })
+
+  it('should contain a component with a text prop equal to "Some title"', () => {
+    expect(wrapper.find('[text="Some title"]').text()).toBe('<Title />')
+  })
+
+  it('should contain an element with property alt equal to "logo"', () => {
+    expect(wrapper.find({alt: 'logo'}).exists()).toBe(true)
+  })
 })
 
 test('renders learn react link', () => {
